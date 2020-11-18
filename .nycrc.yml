@@ -24,3 +24,8 @@ check-coverage: true
 cache: false
 all: true
 temp-directory: "./coverage/.nyc_output"
+
+branches: 65
+lines: 65
+functions: 65
+statements: 65
