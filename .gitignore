@@ -1,0 +1,16 @@
+### IDE ###
+nbproject
+.vscode
+.idea
+
+### Node ###
+node_modules
+.nyc_output
+coverage
+test-results.xml
+
+### TSC ###
+*.d.ts
+*.d.ts.map
+*.js
+*.js.map

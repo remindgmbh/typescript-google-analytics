@@ -1,0 +1,22 @@
+### IDE ###
+nbproject
+.vscode
+.idea
+
+### Node ###
+node_modules
+
+### Testing ###
+.nyc_output
+coverage
+test-results.xml
+
+### TSC ###
+*.d.ts
+*.d.ts.map
+*.js
+*.js.map
+
+### Development ###
+.editorconfig
+test

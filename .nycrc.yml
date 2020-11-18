@@ -1,0 +1,26 @@
+reporter:
+    - lcov
+    - text-summary
+
+extension:
+    - .ts
+
+include:
+    - "**/*.js"
+    - "**/*.ts"
+
+exclude:
+    - "**/*.spec.ts"
+    - "**/*.d.ts"
+    - "coverage/**"
+    - "node_modules/**"
+
+require:
+    - ts-node/register
+
+sourceMap: true
+instrument: true
+check-coverage: true
+cache: false
+all: true
+temp-directory: "./coverage/.nyc_output"
