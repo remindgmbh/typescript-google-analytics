@@ -45,4 +45,19 @@ describe('Analytics', function() {
         expect(window['ga-disable-test']).to.be.true
     })
 
+    it('should only load once', () => {
+
+        const a: Analytics = new Analytics('test')
+        a.loadScript()
+
+        expect(a.isLoaded).to.be.true
+
+        a.loadScript()
+
+        const result: HTMLCollectionOf<HTMLScriptElement> = document.getElementsByTagName('script')
+
+        expect(result.length).to.equal(1)
+        expect(result[0].src).to.equal('https://www.google-analytics.com/analytics.js')
+    })
+
 })

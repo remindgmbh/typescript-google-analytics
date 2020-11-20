@@ -27,5 +27,5 @@ temp-directory: "./coverage/.nyc_output"
 
 branches: 65
 lines: 65
-functions: 65
+functions: 60
 statements: 65
